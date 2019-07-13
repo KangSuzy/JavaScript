@@ -1,6 +1,6 @@
 var uninitialized_var;
 
-var obj={
+var obj = {
 	x:1,
 	y:2
 };
