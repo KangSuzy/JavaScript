@@ -8,7 +8,7 @@ do{
 }while(cond);
 
 do{
-	var ans = parseInt( prompt("1+1=?"));
+	var ans = parseInt( prompt("1+1=?")); //반복될 코드
 }while(ans !=2 );
 
 console.log("맞췄습니다");
