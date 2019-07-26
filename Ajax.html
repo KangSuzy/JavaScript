@@ -4,7 +4,13 @@
 	<meta charset="utf-8">
 	<script type="text/javascript">
 		var req = new XMLHttpRequest();
-		req.open("GET", "./datatest.txt");
+		req.onreadystatechange = function a(){
+			console.log(this.readyState, this.status);
+			if( this.readyState == 4 && this.status == 200){
+				console.log(this.response);
+			}
+		}
+		req.open("GET", "http://google.com/");
 		req.send();
 	</script>
 </head>
